@@ -57,6 +57,10 @@ public class RpcServer {
         }
     };
 
+    public RpcServer() {
+        this(new RpcServerConfig());
+    }
+
     public <T> void register(Class<T> interfaceClass, T bean) {
         serviceManager.register(interfaceClass, bean);
     }
@@ -89,7 +93,5 @@ public class RpcServer {
         // service
         this.serviceManager = new ServiceManager();
         this.serviceInvoker = new ServiceInvoker();
-
-
     }
 }

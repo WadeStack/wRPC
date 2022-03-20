@@ -15,6 +15,7 @@
         <module>wRPC-server</module>
         <module>wRPC-client</module>
         <module>wRPC-common</module>
+        <module>wRPC-example</module>
     </modules>
 
     <name>wRPC</name>
