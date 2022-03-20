@@ -21,7 +21,7 @@ public class RandomTransportSelector implements TransportSelector {
      */
     private List<TransportClient> clients;
 
-    private RandomTransportSelector() {
+    public RandomTransportSelector() {
         clients = new ArrayList<>();
     }
 
